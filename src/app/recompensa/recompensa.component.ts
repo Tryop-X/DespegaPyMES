@@ -21,7 +21,7 @@ export class RecompensaComponent implements OnInit{
       this.punteroCallenge = num;
     });
   }
-
+  // cada que queramos reclamar una recompensa nos va a redirigir a la página de esta
   abrirEnNuevaPestana() {
     window.open(this.recompensa.url, '_blank');
   }

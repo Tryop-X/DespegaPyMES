@@ -15,7 +15,7 @@ export class CursoComponent implements OnInit{
   @Input("punteroCallenge") punteroCallenge: number = 0;
   @Input("indice") indice: number = 0;
 
-
+  // Carga de data dummy
   recompensas = [
     {
       'img': 'minegociobcp',
@@ -53,6 +53,8 @@ export class CursoComponent implements OnInit{
     private punteroService: PunteroService
   ) {}
 
+  // nos hemos suscrito al observador para saber que puntuación tiene el jugador
+  // el puntero callenge guarda la cantidad de niveles que ha pasado el jugador.
   ngOnInit() {
     this.punteroService.numeroActual.subscribe((num) => {
       this.punteroCallenge = num;

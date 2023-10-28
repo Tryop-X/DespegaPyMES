@@ -8,6 +8,8 @@ import {PasoModel} from "../modelos/paso.model";
 })
 export class CallengeComponent implements OnInit, OnDestroy {
 
+  // atributos para el control del juego y el progreso
+
   public progress = 0;
   private intervalId: any;
 
@@ -26,6 +28,7 @@ export class CallengeComponent implements OnInit, OnDestroy {
 
 
   ngOnInit() {
+    // creamos una vida por cada pregunta
     this.data.preguntas.forEach( p => this.vidas.push(-1))
   }
 
@@ -43,16 +46,18 @@ export class CallengeComponent implements OnInit, OnDestroy {
     }
   }
 
+  // metodo usado para setear una respuesta desde el dom
   responder(respuesta: boolean){
     const isCorrect = this.data.preguntas[this.numPregunta].respuesta === respuesta;
     this.probarPerdida( isCorrect ? 1 : 0);
   }
 
+  // probamos que no tenga dos errores, también probamos que haya terminado, sin esa cantidad de errores
   probarPerdida(jugada: number){
     this.progress = 0;
     this.vidas[this.numPregunta] = jugada;
     this.numPregunta ++;
-    if(this.vidas.filter(v => v === 0).length > 4) {
+    if(this.vidas.filter(v => v === 0).length > 1) {
       this.perdido = true;
       this.intervalId = setInterval(() => {
         this.close(false);
@@ -68,6 +73,7 @@ export class CallengeComponent implements OnInit, OnDestroy {
       return;
     }
   }
+  // cambiamos los valores de la barra de prograso en relación de rojo y verde
 
   get backgroundColor() {
     const red = Math.min(255, (this.progress * 2.55));
@@ -78,6 +84,7 @@ export class CallengeComponent implements OnInit, OnDestroy {
   close(resultado: boolean) {
     this.dialogRef.close({resultado});
   }
+  // iniciamos el juego.
   iniciar() {
     this.iniciado = true;
     this.intervalId = setInterval(() => {

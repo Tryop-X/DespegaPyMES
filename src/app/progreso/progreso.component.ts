@@ -24,12 +24,15 @@ export class ProgresoComponent implements OnInit{
   ) {}
 
   ngOnInit() {
+    // nos suscribimos para ver si se cambia el nivel del jugador
     this.punteroService.numeroActual.subscribe((num) => {
       this.punteroCallenge = num;
     });
   }
 
   openCallenge(puede: boolean): void {
+    // siempre que el usuario tenga el puntero apuntando justamente a este "progreso"
+    // le va a dejar
     if (puede){
       this.paso.preguntas = this.shuffle(this.paso.preguntas);
 

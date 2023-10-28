@@ -1,27 +1,27 @@
 # AbcApp
+Aplicación Educativa Financiera para Pequeños y Medianos Empresarios
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
+Descripción:
+Este programa está diseñado para educar financieramente a pequeños y medianos empresarios. A través de una serie de cursos interactivos, los usuarios pueden aprender conceptos y habilidades financieras esenciales para sus negocios.
 
-## Development server
+## Características principales:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+    Cursos Interactivos: Cada curso consta de distintas preguntas de opción múltiple con respuestas de verdadero y falso.
+    Niveles: Al responder correctamente las preguntas, los usuarios avanzarán de nivel. Completar todos los niveles significa culminar un curso.
+    Recompensas: Cada vez que se complete un curso, los usuarios recibirán recompensas proporcionadas por el Banco de Crédito del Perú (BCP).
 
-## Code scaffolding
+## ¿Cómo funciona?
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    Selecciona un Curso: Elige un curso de la lista disponible.
+    Responde las Preguntas: Cada curso tiene distintas preguntas relacionadas con el tema financiero en cuestión.
+    Avanza de Nivel: Al responder correctamente, avanzarás de nivel. Si completas todos los niveles, habrás terminado el curso.
+    Recibe tus Recompensas: Una vez culminado un curso, recibirás recompensas del BCP.
 
-## Build
+Recompensas:
+El Banco de Crédito del Perú (BCP) ha creado este juego educativo con el propósito de fortalecer las habilidades financieras de los empresarios. Por ello, al culminar cada curso, el banco ofrece recompensas que pueden incluir descuentos en servicios, acceso a seminarios exclusivos, entre otros beneficios.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Acerca del BCP:
+El Banco de Crédito del Perú (BCP) es uno de los bancos líderes en el país, comprometido con el desarrollo y educación financiera de sus clientes.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Contacto:
+Para más información o asistencia, por favor contacta al equipo de soporte del BCP.

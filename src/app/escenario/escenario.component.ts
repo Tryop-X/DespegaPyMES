@@ -13,6 +13,9 @@ export class EscenarioComponent implements OnInit {
   punteroCallenge = 0;
   punteroCurso = 0;
 
+  // cargamos la mayor canntidad de datos acá. Preguntas y, steps y cursos.
+  // esto lo hacemos para formar un solo objeto.
+
   preguntas: PreguntasModel[] = [
     {
       "pregunta": "el estudio mencionado en el curso determinó que la infidelidad es la principal causa de separación de las parejas.",
@@ -199,7 +202,7 @@ export class EscenarioComponent implements OnInit {
   ngOnInit() {
     this.cursos = this.shuffle(this.cursos);
   }
-
+  // mezclamos los cursos en orden.
   shuffle(array: CursoModel[]) {
     return array.sort(() => Math.random() - 0.5).slice(0, 6);
   }
