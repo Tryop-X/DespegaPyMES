@@ -3,7 +3,7 @@
      [ngClass]="indice < punteroCallenge ? 'pasado' : indice === punteroCallenge ? 'nivel' : 'fuera'"
   >
   <div class="row ">
-    <img src="assets/img/profe.png">
+    <img src="{{'assets/img/'+ paso.img + '.png'}}">
   </div>
   <div class="row">
     <b>{{paso.title}}</b>

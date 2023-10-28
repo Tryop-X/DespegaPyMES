@@ -18,43 +18,40 @@ export class CursoComponent implements OnInit{
 
   recompensas = [
     {
-      'img': 'despega',
-      'nombre': 'despega',
-      'descripcion': '10 soles en tu cuenta'
+      'img': 'minegociobcp',
+      'nombre': 'minegociobcp',
+      'url': 'https://www.viabcp.com/pymes/financiamiento/liquidez-para-negocio/minegociobcp'
     },
     {
-      'img': 'yape',
-      'nombre': 'Yape',
-      'descripcion': '10 soles en tu cuenta'
+      'img': 'wally',
+      'nombre': 'Wally',
+      'url': 'https://www.viabcp.com/pymes/otros-servicios/wally-punto-de-venta'
     },
     {
-      'img': 'yape',
-      'nombre': 'Yape',
-      'descripcion': '10 soles en tu cuenta'
+      'img': 'recompensa',
+      'nombre': 'Recompensa',
+      'url': 'https://www.viabcp.com/pymes'
     },
     {
-      'img': 'yape',
-      'nombre': 'Yape',
-      'descripcion': '10 soles en tu cuenta'
+      'img': 'recompensa',
+      'nombre': 'Recompensa',
+      'url': 'https://www.viabcp.com/pymes'
     },
     {
-      'img': 'yape',
-      'nombre': 'Yape',
-      'descripcion': '10 soles en tu cuenta'
+      'img': 'recompensa',
+      'nombre': 'Recompensa',
+      'url': 'https://www.viabcp.com/pymes'
     },
     {
-      'img': 'yape',
-      'nombre': 'Yape',
-      'descripcion': '10 soles en tu cuenta'
+      'img': 'recompensa',
+      'nombre': 'Recompensa',
+      'url': 'https://www.viabcp.com/pymes'
     },
   ]
 
   constructor(
     private punteroService: PunteroService
   ) {}
-
-
-
 
   ngOnInit() {
     this.punteroService.numeroActual.subscribe((num) => {

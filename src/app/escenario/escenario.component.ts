@@ -93,75 +93,65 @@ export class EscenarioComponent implements OnInit {
 
   preguntas3: PreguntasModel[] = [
     {
-      "pregunta": "una persona siempre debe asumir una deuda cuando tiene alguna necesidad por cubrir.",
-      "respuesta": false
-    },
-    {
-      "pregunta": "las deudas son buenas en todas las circunstancias.",
-      "respuesta": false
-    },
-    {
-      "pregunta": "el pago mensual de tus deudas no debe ser mayor al 30% de tus ingresos.",
+      "pregunta": " El presupuesto se define como un plan financiero que detalla cómo se gastará el dinero y los ingresos esperados en un período determinado?.",
       "respuesta": true
     },
     {
-      "pregunta": "el sobreendeudamiento ocurre cuando el pago mensual de tus deudas supera el 30% de tus ingresos.",
+      "pregunta": "¿Registrar gastos ayuda a tener un control de las finanzas, identificar áreas de gasto excesivo y tomar decisiones financieras más informadas?.",
       "respuesta": true
     },
     {
-      "pregunta": "los bancos cobran intereses por prestar dinero debido a que necesitan generar ingresos para ser rentables.",
-      "respuesta": true
-    },
-    {
-      "pregunta": "la tasa de interés que los bancos cobran por otorgar un producto financiero se llama 'tasa de rendimiento efectiva anual' (trea).",
+      "pregunta": "¿El interés compuesto se calcula aplicando intereses menos los intereses ganados anteriormente y no nos genera crecimiento?.",
       "respuesta": false
     },
     {
-      "pregunta": "las tarjetas de crédito y las tarjetas de débito son iguales en términos de cómo afectan tus finanzas personales.",
+      "pregunta": "¿La principal diferencia entre una cuenta de ahorros y una cuenta corriente es que en la primera gano intereses y en la segunda sólo sirve para transacciones diarias?.",
       "respuesta": false
     },
     {
-      "pregunta": "se recomienda utilizar una tarjeta de crédito para compras que puedas pagar a fin de mes y para compras más grandes que necesitas pagar en cuotas.",
+      "pregunta": "¿Para poder generar una factura, necesito saber de manera obligatoria el RUC de la otra empresa?.",
       "respuesta": true
     },
     {
-      "pregunta": "la fecha de facturación de una tarjeta de crédito es la fecha en la que debes pagar el monto total de tus compras.",
+      "pregunta": "¿Las declaraciones mensuales no son obligatorias si es que pertenezco al Régimen General?",
       "respuesta": false
     },
-    {
-      "pregunta": "para tener un buen historial crediticio, es importante asegurarse de que el pago mensual de tus deudas no exceda el 30% de tus ingresos.",
-      "respuesta": true
-    }
   ]
 
   paso: PasoModel[] = [
     {
-      preguntas: this.preguntas,
+      preguntas: this.preguntas3,
+      img: 'reto6',
       title: 'Maneja tu dinero ',
       description: 'una descripción de prueba',
     },
     {
-      preguntas: this.preguntas2,
+      preguntas: this.preguntas,
+      img: 'reto5',
       title: 'Arma un presupuesto',
       description: 'una descripción de prueba',
     },
     {
       preguntas: this.preguntas3,
+      img: 'reto4',
       title: 'Ahorra para tu futuro',
       description: 'una descripción de prueba',
     },
     {
       preguntas: this.preguntas2,
+      img: 'reto3',
       title: 'Maneja bien tus deudas',
       description: 'una descripción de prueba',
     },
     {
-      preguntas: this.preguntas3,
+      preguntas: this.preguntas,
+      img: 'reto2',
       title: 'Usa canales digitales ',
       description: 'una descripción de prueba',
     },
     {
-      preguntas: this.preguntas2,
+      preguntas: this.preguntas3,
+      img: 'reto1',
       title: 'Usa canales digitales II',
       description: 'una descripción de prueba',
     },
