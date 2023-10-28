@@ -1,0 +1,14 @@
+.curso {
+  width: 100%; /* o el ancho que desees */
+  padding-bottom: 100%; /* esto crea la relación de aspecto 1:1 */
+  position: relative;
+  z-index: 1;
+}
+app-curso{
+
+}
+
+.recompesas {
+  background-color: rgba(#F24405, 0.3);
+  border-radius: 2%;
+}

@@ -1,0 +1,48 @@
+<div class="container align-items-center">
+
+  <div class="row">
+    <div class="col" *ngFor="let vida of vidas">
+      <div [ngClass]="vida === 1 ? 'vivo' : vida === -1 ? 'espera' : 'muerto'"> </div>
+    </div>
+  </div>
+
+  <h2 class="titulo">{{data.title}}</h2>
+
+
+  <div class="container" style="min-height: 150px">
+
+    <div class="inicio" *ngIf="!iniciado && !perdido && !ganado">
+      <button mat-raised-button color="warn" style="font-size: 10px" (click)="iniciar()">Iniciar</button>
+    </div>
+
+    <div class="pregunta" *ngIf="!perdido && iniciado && !ganado">
+      <div mat-dialog-content style="color: #072E70">
+        {{'¿' + data.preguntas[numPregunta].pregunta + '?'}}
+      </div>
+    </div>
+
+
+    <div class="game over" *ngIf="perdido && iniciado && !ganado">
+      <h3>Ha fallado :c</h3>
+      <h5>Intente Otra vez</h5>
+      <button mat-raised-button color="warn" style="font-size: 10px" (click)="close(false); abrirEnNuevaPestana()">Repasar Clase</button>
+    </div>
+
+    <div class="win" *ngIf="ganado && !perdido">
+      <h1>Felicitaciones</h1>
+      <h5>ha debloqueado un regalo</h5>
+      <button mat-raised-button color="warn" style="font-size: 10px" (click)="close(true)">Hecho</button>
+    </div>
+
+    <div mat-dialog-actions *ngIf="!perdido && iniciado && !ganado">
+      <button style="width: 45%; background: forestgreen;" (click)="responder(true)"> Verdadero </button>
+      &nbsp;
+      <button style="width: 45%; background: red" (click)="responder(false)"> Falso </button>
+    </div>
+
+  </div>
+
+  <div class="loaderBar" [style.width.%]="progress" [style.background]="backgroundColor" *ngIf="!perdido"></div>
+
+
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+  <h4>{{curso.name}}</h4>
+  <div class="row" style="margin-bottom: 25px">
+    <div class="col" *ngFor="let paso of curso.pasos; let i = index">
+      <app-progreso [paso]="paso" [punteroCallenge]="punteroCallenge" [indice] = "i + indice*6"></app-progreso>
+    </div>
+  </div>
+
+  <div class="row recompesas" style="margin-bottom: 25px">
+    <div class="col" *ngFor="let recompensa of recompensas; let i = index">
+      <app-recompensa [recompenza]="recompensa" [indice] = "i + indice*6"></app-recompensa>
+    </div>
+  </div>
+
+</div>

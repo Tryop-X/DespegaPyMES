@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'abc-app';
+  logeado: boolean = false;
+
+  logearse(valor: boolean){
+    this.logeado = valor;
+  }
 }

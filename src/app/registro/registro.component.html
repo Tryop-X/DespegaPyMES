@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-md-7">
+    <div class="container">
+      <div class="row" style="color: #072E70; font-size: 50px; margin-top: 45%">
+        Personaliza tu ruta
+      </div>
+      <h3 class="row" style="color: #888888; font-size: 30px; margin-top: 30px; margin-bottom: 25px; font-family: 'Barlow Condensed Light'">
+        Creamos una ruta perfecta para ti y tu negocio solo con tu RUC
+      </h3>
+      <div class="row">
+        <div class="col-md-9">
+          <form class="example-form">
+            <mat-form-field class="white-background" style="width: 100%">
+              <mat-label>RUC</mat-label>
+              <input type="text" matInput [formControl]="dni" placeholder="RUC">
+              <mat-error *ngIf="dni.hasError('required')">
+                Agrega tu <strong>RUC</strong>
+              </mat-error>
+            </mat-form-field>
+          </form>
+        </div>
+        <div class="col-md-3">
+          <button mat-raised-button color="warn" style="font-size: 10px" (click)="logearse()">Descubrir</button>
+        </div>
+      </div>
+
+      <div>
+        <span>
+          (*) Al enviarnos esta información usted autoriza al BCP el tratamiento de sus datos personales. Conoce más aquí.
+Este sitio está protegido por reCAPTCHA y se aplican las Políticas de privacidad y Términos del servicio de Google.
+        </span>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="col-md-5">
+    <img src="assets/img/personaLogin.png">
+  </div>
+</div>

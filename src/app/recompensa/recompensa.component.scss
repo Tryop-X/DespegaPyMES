@@ -1,0 +1,21 @@
+.row {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center;     /* Centrar verticalmente */
+  height: 100%; /* Ajusta esta altura según lo que necesites */
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5%;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(#888888, 0.09);
+}

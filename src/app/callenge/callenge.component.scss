@@ -1,0 +1,66 @@
+.loaderBar {
+  height: 10px;
+  background: #F9F9F9;
+  border-radius: 10px;
+  border: 1px solid #006DFE;
+  position: relative;
+  overflow: hidden;
+}
+
+.loaderBar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 5px;
+  animation: lightEffect 1s infinite linear;
+  animation-fill-mode: forwards;
+}
+
+.container {
+  background-color: #FFFFFF;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.vivo {
+  background: green;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.muerto {
+  background: red;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.espera {
+  background: lightblue;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.mat-button{
+  width: 50%;
+}
+
+.titulo {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Centra verticalmente */
+  height: 100%;
+}
+
+.pregunta {
+  color: #072E70;
+}
+
+mat-raised-button {
+
+}

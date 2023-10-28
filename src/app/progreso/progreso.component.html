@@ -1,0 +1,14 @@
+<div class="container"
+     (click)="openCallenge(indice === punteroCallenge)"
+     [ngClass]="indice < punteroCallenge ? 'pasado' : indice === punteroCallenge ? 'nivel' : 'fuera'"
+  >
+  <div class="row ">
+    <img src="assets/img/profe.png">
+  </div>
+  <div class="row">
+    <b>{{paso.title}}</b>
+  </div>
+  <div class="row" style="font-size: 10px">
+    {{paso.description}}
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<div class="container" *ngFor="let curso of cursos; let i = index">
+  <div class="row">
+    <app-curso [curso]="curso" [punteroCurso]= "punteroCurso" [punteroCallenge]= "punteroCallenge" [indice] = "i"></app-curso>
+  </div>
+</div>
+
